@@ -8,6 +8,7 @@ Vue.use(Router);
 
 export enum Page {
   Hello = 'hello-world',
+  Instagram = 'instagram',
   NotFound = 'not-found',
 }
 
@@ -15,7 +16,6 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-    ...generatedRoutes,
     {
       path: '/',
       name: Page.Hello,
@@ -26,6 +26,17 @@ export default new Router({
         import(
           /* webpackChunkName: "hello-world" */
           '@/pages/hello-world'),
+    },
+    {
+      path: '/instagram',
+      name: Page.Instagram,
+      meta: {
+        layout: 'default',
+      },
+      component: () =>
+        import(
+          /* webpackChunkName: "instagram" */
+          '@/pages/instagram'),
     },
     {
       path: '*',

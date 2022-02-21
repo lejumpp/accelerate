@@ -18,6 +18,7 @@ module.exports = {
       inherit: 'inherit',
       transparent: 'transparent',
       app: {
+        header: 'var(--app-header)',
         background: 'var(--app-background)',
         footer: 'var(--app-footer)',
       },

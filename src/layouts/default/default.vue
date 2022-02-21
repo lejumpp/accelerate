@@ -4,7 +4,7 @@
 <template>
   <div class="[ default ][ grid ]">
     <!-- Header -->
-    <div class="[ h-12 ]"></div>
+    <div class="[ h-0 ]"></div>
 
     <!-- Body -->
     <div class="[ grid ]">
